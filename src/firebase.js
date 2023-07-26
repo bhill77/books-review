@@ -3,7 +3,7 @@ import { getDatabase, ref } from 'firebase/database'
 // ... other firebase imports
 
 export const firebaseApp = initializeApp({
-    databaseURL: 'https://coba-4b64b.firebaseio.com/'
+    databaseURL: import.meta.env.VITE_FIREBASE_URL
 })
 
 // used for the databas refs
